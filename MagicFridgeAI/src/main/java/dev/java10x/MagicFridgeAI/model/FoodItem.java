@@ -1,17 +1,16 @@
 package dev.java10x.MagicFridgeAI.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "food_item")
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Entity
+@Table(name = "food_item")
 public class FoodItem {
 
     @Id
