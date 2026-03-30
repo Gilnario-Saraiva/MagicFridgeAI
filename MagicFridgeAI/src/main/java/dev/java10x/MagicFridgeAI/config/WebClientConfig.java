@@ -12,7 +12,7 @@ public class WebClientConfig {
     private String chatGptApiUrl;
 
     @Bean
-    private WebClient webClient(WebClient.Builder builder){
+    public WebClient webClient(WebClient.Builder builder){
         return builder.baseUrl(chatGptApiUrl).build();
     }
 }
